@@ -25,14 +25,26 @@ const countries = [
 
 function checkCountry(country, countries){
   //1) string and length > 0
-  if(typeof country != "string" || country.length == 0) return (`Zadali jste neplatný dotaz: ${country}`);
+  if(typeof country != "string" || country.length == 0){
+    console.log(`Zadali jste neplatný dotaz: ${country}`);
+    return
+  } 
+  
   //2) if country in countries -> return index, otherwise inform user
   if(countries.includes(country)){
-    return (`Zadaná krajina ${country} se nachází v seznamu krajin na indexu: ${countries.indexOf(country)}`)
+    console.log(`Zadaná krajina ${country} se nachází v seznamu krajin na indexu: ${countries.indexOf(country)}`)
   } else {
-    return `Zadaná krajina ${country} se nenachází v seznamu krajin.`
+    console.log(`Zadaná krajina ${country} se nenachází v seznamu krajin.`)
   }
 
 }
 
-console.log(checkCountry("China", countries))
+
+//checkCountry("Germany", countries);
+//checkCountry("Japan", countries);
+//checkCountry(1000, countries);
+
+
+// 2 část
+
+
