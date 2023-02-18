@@ -21,7 +21,7 @@ const countries = [
   "Myanmar",
 ];
 
-//_______________1 část______________\\
+//__________1) část
 
 function checkCountry(country, countries) {
   //1) string and length > 0
@@ -30,20 +30,15 @@ function checkCountry(country, countries) {
     return;
   }
   //2) country in countries?
-  console.log(
-    countries.includes(country)
-      ? `Zadaná krajina ${country} se nachází v seznamu krajin na indexu: ${countries.indexOf(
-          country
-        )}`
-      : `Zadaná krajina ${country} se nenachází v seznamu krajin.`
+  console.log(countries.includes(country)? `Zadaná krajina ${country} se nachází v seznamu krajin na indexu: ${countries.indexOf(country)}`:`Zadaná krajina ${country} se nenachází v seznamu krajin.`
   );
 }
+// console.table(countries);
+// checkCountry("Germany", countries);
+// checkCountry("Japan", countries);
+// checkCountry(1000, countries);
 
-//checkCountry("Germany", countries);
-//checkCountry("Japan", countries);
-//checkCountry(1000, countries);
-
-//_____________2 část________________\\
+//_____________2) část
 
 function addCountry(country, countries) {
   //check if country is valid
@@ -61,25 +56,22 @@ function addCountry(country, countries) {
   } else {
     countries.push(country);
     console.log(
-      `Zadaná krajina ${country} byla úspěšně přidaná do seznamu krajin na indexu ${countries.indexOf(
+      `Zadaná krajina ${country} byla úspěšně přidána do seznamu krajin na indexu ${countries.indexOf(
         country
       )}. Celkový počet krajin v seznamu je ${countries.length}`
     );
   }
 }
 
-// console.log("countries before adding:")
-// console.table(countries)
 
+// console.table(countries)
 // addCountry("Vietnam", countries);
 // addCountry("Mexico", countries);
 // addCountry("Poland", countries);
 // addCountry("", countries);
-
-// console.log("countries after adding: ")
 // console.table(countries)
 
-//_____________3 část_________________\\
+//_____________ 3) část
 
 function removeCountry(country, countries) {
   //check if input country is valid
@@ -99,13 +91,10 @@ function removeCountry(country, countries) {
   }
 }
 
-// console.log("countries before removing:")
-// console.table(countries)
 
-//removeCountry("", countries);
-//removeCountry("Vietnam", countries);
-//removeCountry("Laos", countries);
-//removeCountry("Thailand", countries);
-
-// console.log("countries after removing: ")
-// console.table(countries)
+// console.table(countries);
+// removeCountry("", countries);
+// removeCountry("Vietnam", countries);
+// removeCountry("Laos", countries);
+// removeCountry("Thailand", countries);
+// console.table(countries);
