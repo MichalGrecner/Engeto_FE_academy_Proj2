@@ -1,3 +1,6 @@
+//Michal Grečner, discord: Michal G.#8176 grecnermichal@gmail.com
+
+
 const countries = [
   "United States",
   "China",

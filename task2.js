@@ -1,3 +1,4 @@
+//Michal Grečner, discord: Michal G.#8176 grecnermichal@gmail.com
 const countriesPopulation = [
   { country: "China", population: 1439323776 },
   { country: "India", population: 1379302771 },
